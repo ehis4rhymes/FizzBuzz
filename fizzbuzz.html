@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title> FizzBuzz Logic</title>
+      <link href="fizzbuzz.css"  rel="stylesheet" />
+  </head>
+  <body>
+      <header><center><h1>FizzBuzz Logic</h1></center></header>
+      
+      <main>
+          <p> <b>This page prints out fizz when a number between 1 and 100 is divisible by 3, prints out buzz if it is divisible by 5 and prints fizzbuzz if it is divisible by both 3 and 5 using a while conditional statement</b> </p>
+          <br/>
+          
+          <script>
+          var i = 1;
+               
+              while(i <= 100){
+                  
+                  if( i%3 == 0 && i%5 == 0){
+                          document.write( i + ". fizzbuzz <br/>");
+                  } 
+                  else if( i%3 == 0){
+                          document.write( i + ". fizz <br/>");
+                      } 
+                  else if( i%5 == 0){
+                          document.write( i + ". buzz <br/>");
+                      } 
+                  else{
+                          document.write( i + ".<br/>");
+                      } 
+                  
+                  i++;
+                  
+              }
+          </script>
+      </main>
+  </body>
+</html>
